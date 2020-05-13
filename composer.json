@@ -1,0 +1,21 @@
+{
+  "name": "scott/aheadcurvetravel",
+  "description": "Ahead curve travel",
+  "type": "web-application",
+  "authors": [
+    {
+      "name": "Shaiful Islam",
+      "email": "kuvic16@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "guzzlehttp/guzzle": "^6.3",
+    "vlucas/phpdotenv": "^4.1@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aheadcurvetravel\\Web\\": "src/"
+    }
+  }
+}

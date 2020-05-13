@@ -1,0 +1,519 @@
+.plan-bottom {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #070707;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-area {
+    position: relative;
+    overflow: hidden;
+    height: 540px;
+    background: url(../img/hero.jpg) no-repeat scroll center center / cover;
+}
+
+.hero-area>img {
+    width: 100%;
+}
+
+.hero-text-wraper {
+    position: absolute;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.hero-text img {
+    max-width: 130px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+
+.hero-text p {
+    margin: auto;
+    font-size: 35px;
+    color: #000000;
+    max-width: 600px;
+}
+
+.promotion-area {
+    position: relative;
+    overflow: hidden;
+    background: #32BEA6;
+}
+
+.promotion-image {
+    width: 48%;
+    margin-left: auto;
+    display: block;
+}
+
+.promotion-image img {
+    width: 100%;
+}
+
+.promotion-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0 0 70px;
+    text-transform: uppercase;
+}
+
+.promotion-text p {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.service-area {
+    padding: 100px 0;
+}
+
+.service-area .section-title h2 {
+    color: #000000;
+    text-align: center;
+}
+
+.single-service {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.service-icon {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.service-icon img {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.single-service p {
+    color: #000000;
+    font-size: 18px;
+}
+
+.plan-area {
+    background: url(../img/plan-bg.jpg) no-repeat scroll center center / cover;
+    padding: 100px 0;
+}
+
+.plan-box {
+    background: #fff;
+    padding: 40px 50px;
+}
+
+.plan-box-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.plan-box-title h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #f7941d;
+    font-weight: 700;
+    font-size: 35px;
+    margin: 0;
+}
+
+.plan-box-title p {
+    color: #f7941d;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.plan-body {
+    min-height: 250px;
+}
+
+.plan-body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.plan-body ul li {
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    padding-left: 50px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.plan-body ul li:before {
+    content: "";
+    background: url(../img/check.png) no-repeat scroll 0 0 / 100%;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 17px;
+    height: 17px;
+}
+
+.plan-bottom {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.plan-bottom button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    background: #2DD1C9;
+    display: inline-block;
+    border: 1px solid #2DD1C9;
+    padding: 10px 25px;
+    border-radius: 50px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.plan-bottom button:hover {
+    text-decoration: none;
+    color: #2DD1C9;
+    background: transparent;
+}
+
+.plan-bottom button:focus {
+    outline: 0;
+}
+
+.footer-area {
+    padding: 100px 0;
+    text-align: center;
+    background: #F7F7F7;
+}
+
+.footer-area img {
+    margin-bottom: 50px;
+    max-width: 100px;
+}
+
+.footer-area p {
+    margin: auto;
+    max-width: 815px;
+	font-size: 12px;
+}
+
+.header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.page-top-area {
+    background: url(../img/page-bg.jpg) no-repeat scroll center center / cover;
+    padding: 30px 0;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.page-top-area h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.navbar-brand {
+    max-width: 75px;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.form-area {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-image {
+    position: absolute;
+    right: 0;
+    width: 49%;
+    bottom: 230px;
+    height: 788px;
+    overflow: hidden;
+    background: url(../img/form-bg.jpg) no-repeat scroll bottom center / cover;
+}
+
+.choose-form {
+    max-width: 400px;
+    margin: 0 auto 85px;
+}
+
+.form-image img {
+    width: 100%;
+}
+
+.single-form label {
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    margin: 0 0 5px;
+    max-width: 350px;
+}
+
+.single-form input,
+.single-form textarea {
+    background: #F6F6F6;
+    border: 0;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.single-form {
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.single-form textarea {
+    height: 135px;
+    resize: none;
+}
+
+.single-form input:focus,
+.single-form textarea:focus {
+    outline: 0;
+}
+
+.single-form button {
+    border: 1px solid #2DD1C9;
+    background: #2DD1C9;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin-top: 50px;
+}
+
+.single-form button:hover {
+    background: transparent;
+    color: #2DD1C9;
+}
+
+.choose-form span.select2-selection.select2-selection--single {
+    border: 0;
+    background: #F7941D;
+    border-radius: 100px;
+    height: auto;
+    padding: 20px;
+}
+
+.choose-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+	line-height: 33px;
+}
+
+.choose-form .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .choose-form .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,.choose-form .select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .choose-form .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+    border-radius: 100px;
+}
+
+.choose-form .select2-container--default.select2-container--open.select2-container--below .select2-selection--single:focus, .choose-form .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple:focus {
+    outline: 0;
+}
+
+.choose-form .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #fff transparent;
+    border-width: 0 10px 10px 10px;
+}
+
+.choose-form .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #fff transparent transparent transparent;
+    border-width: 10px 10px 0 10px;
+    right: 11px;
+    left: auto;
+}
+
+.choose-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 20px;
+}
+
+span.select2-dropdown.select2-dropdown--below,.select2-container--open .select2-dropdown {
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.single-form span.icon {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    bottom: 10px;
+}
+
+.single-form span.select2-selection.select2-selection--single {
+    border: 0;
+    background: #F6F6F6;
+    padding: 10px;
+    height: 40px;
+    border-radius: 0;
+    padding: 6px;
+}
+
+.single-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 13px;
+}
+
+.single-form .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #000 transparent transparent transparent;
+    left: auto;
+    top: 17px;
+    right: 10px;
+    border-width: 7px 6px 0 6px;
+}
+
+.single-form .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #000 transparent;
+    border-width: 0 6px 7px 6px;
+}
+
+/*.single-form.country {
+    margin-top: 50px;
+}*/
+
+.single-form.country span.icon {
+    width: 15px;
+    right: auto;
+    left: 15px;
+}
+
+.single-form.country span.select2-selection.select2-selection--single {
+    padding-left: 30px;
+}
+
+button.navbar-toggler {
+    border: 1px solid #fff;
+    height: 35px;
+    width: 40px;
+    position: relative;
+}
+
+button.navbar-toggler span {
+    background: #fff;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    top: 7px;
+}
+
+button.navbar-toggler span:nth-child(3) {
+    top: 23px;
+}
+
+button.navbar-toggler span:nth-child(2) {
+    top: 14px;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline: 0;
+}
+
+.single-form button.ui-datepicker-trigger {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.single-form.country input {
+    padding-left: 45px;
+}
+
+.choose-form span.select2-selection.select2-selection--single {
+    outline: 0;
+}
