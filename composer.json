@@ -1,6 +1,6 @@
 {
-  "name": "scott/aheadcurvetravel",
-  "description": "Ahead curve travel",
+  "name": "kuvic16/stripe-php-app",
+  "description": "Stripe php application",
   "type": "web-application",
   "authors": [
     {
@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Aheadcurvetravel\\Web\\": "src/"
+      "StripePhp\\App\\": "src/"
     }
   }
 }
