@@ -53,7 +53,7 @@ final class StripeSession{
                     [
                         'name'        => $_ENV["{$this->plan}.NAME"],
                         'description' => $_ENV["{$this->plan}.DESCRIPTION"],
-                        'amount'      => intval($_ENV["{$this->plan}.PRICE"]) * 100,
+                        'amount'      => floatval($_ENV["{$this->plan}.PRICE"]) * 100,
                         'currency'    => 'usd',
                         'quantity'    => 1,
                     ],
