@@ -23,7 +23,7 @@
      *
      * @variable
      */
-    let stripe_publishable_key = "pk_test_l6ueGUx2yZIkGQJoiuQA1DCr00a4G1rhvh";
+    let stripe_publishable_key = "pk_test_H80D85FJvAbT1yEsGETEM5DI00noOtHiLG";
 
     /**
      * Basic plan button click listener
@@ -51,8 +51,9 @@
      * @return void
      */
     function getCheckoutSession($planName) {
+      var milliseconds = new Date().getTime();
       $.ajax({
-        url: "stripe-session.php?plan=" + $planName,
+        url: "stripe-session.php?plan=" + $planName + "&t=" + milliseconds,
         type: "GET",
         success: function (response) {
           if (response.success == 1) {

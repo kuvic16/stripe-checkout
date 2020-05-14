@@ -56,6 +56,7 @@ final class StripeSession{
                         'quantity'    => 1,
                     ],
                 ],
+                'mode' => 'payment',
             ];
 
             $response = $this->client->request('POST', $_ENV['STRIPE_SESSION_URL'],
