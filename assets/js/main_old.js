@@ -44,28 +44,16 @@
     });
 
     /**
-     * Form submit event listener
-     *
-     * @return void
-     */
-    $("form[name='travel-form']").on("submit", function (e) {
-      e.preventDefault();
-
-      var data = $(this).serialize();
-      getCheckoutSession(data);
-    });
-
-    /**
      * Get checkout session and redirect to checkout page
      *
-     * @param $param | serialize parameter
+     * @param $planName | string
      *
      * @return void
      */
-    function getCheckoutSession($param) {
+    function getCheckoutSession($planName) {
       var milliseconds = new Date().getTime();
       $.ajax({
-        url: "stripe-session.php?" + $param + "&t=" + milliseconds,
+        url: "stripe-session.php?plan=" + $planName + "&t=" + milliseconds,
         type: "GET",
         success: function (response) {
           if (response.success == 1) {

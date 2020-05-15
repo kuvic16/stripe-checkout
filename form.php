@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/sweetalert2.min.css" />
         
         <!-- Mordernizer -->
         <script src="assets/js/vendor/modernizr-3.8.0.min.js"></script>
@@ -81,7 +82,7 @@
                     <div class="col-md-12">
                         <div class="choose-form">
 							<?php  
-								$form_value = $_POST['plan']; 
+								$form_value = $_GET['plan']; 
 							?>
                             <select name="" id="plan-choose" data-minimum-results-for-search="Infinity" data-width="100%">
                                 <option value="" disabled selected>Choose Plan</option>
@@ -93,44 +94,47 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="form-box">
-                            <div class="single-form">
-                                <label for="name">Name</label>
-                                <input type="text" id="name">
+                        <form name="travel-form" action="" method="post">                        
+                            <div class="form-box">
+                                <div class="single-form">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name">
+                                    <input type="hidden" id="plan" name="plan" value="<?php echo $form_value; ?>" />
+                                </div>
+                                <div class="single-form">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="single-form">
+                                    <label for="date">Travel Date</label>
+                                    <input type="text" id="date" name="date">
+                                </div>
+                                <div class="single-form">
+                                    <label for="length">Length of stay intended</label>
+                                    <input type="text" id="length" name="length">
+                                </div>
+                                <div class="single-form country">
+                                    <label for="country">Which country would you like to visit?</label>
+                                    <input id="country" type="text" placeholder="Country" name="country">
+                                    <span class="icon"><img src="assets/img/search.png" alt=""></span>
+                                </div>
+                                <div class="single-form">
+                                    <label for="">What country passport do you have?</label>
+                                    <input type="text" id="passport_country" name="passport_country" required>
+                                </div>
+                                <div class="single-form">
+                                    <label for="visited-countries">What countries will you have visited 14 days prior to leaving for this trip?</label>
+                                    <input type="text" id="visited-countries" name="visited-countries">
+                                </div>
+                                <div class="single-form">
+                                    <label for="comments">Any other comments?</label>
+                                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="single-form">
+                                    <button name="submit" type="submit">SUBMIT NOW</button>
+                                </div>
                             </div>
-                            <div class="single-form">
-                                <label for="email">Email</label>
-                                <input type="email" id="email">
-                            </div>
-                            <div class="single-form">
-                                <label for="date">Travel Date</label>
-                                <input type="text" id="date">
-                            </div>
-                            <div class="single-form">
-                                <label for="length">Length of stay intended</label>
-                                <input type="text" id="length">
-                            </div>
-                            <div class="single-form country">
-                                <label for="country">Which country would you like to visit?</label>
-                                <input id="country" type="text" placeholder="Country">
-                                <span class="icon"><img src="assets/img/search.png" alt=""></span>
-                            </div>
-                            <div class="single-form">
-                                <label for="">What country passport do you have?</label>
-                                <input type="text">
-                            </div>
-                            <div class="single-form">
-                                <label for="visited-countries">What countries will you have visited 14 days prior to leaving for this trip?</label>
-                                <input type="text" id="visited-countries">
-                            </div>
-                            <div class="single-form">
-                                <label for="comments">Any other comments?</label>
-                                <textarea name="" id="comments" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="single-form">
-                                <button type="submit">SUBMIT NOW</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -154,6 +158,8 @@
         <script src="assets/js/select2.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="assets/js/sweetalert2.all.min.js"></script>
+        <script src="assets/js/main.js?v=1.1"></script>
     </body>
 </html>

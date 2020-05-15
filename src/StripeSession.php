@@ -24,11 +24,17 @@ final class StripeSession{
     private $plan;
 
     /**
+     * @var serialized params | string
+     */
+    private $param;
+
+    /**
      * Initialize the class
      */
     public function __construct(){
         $this->client = new Client(['base_uri' => $_ENV['STRIPE_BASE_URL']]);
-        $this->plan   = isset($_GET['plan']) ? strtoupper($_GET['plan']) : $_ENV['DEFAULT_PLAN']; 
+        $this->plan   = isset($_GET['plan']) ? strtoupper($_GET['plan']) : $_ENV['DEFAULT_PLAN'];
+        $this->param  = http_build_query($_GET);
     }
 
     /**
@@ -44,8 +50,8 @@ final class StripeSession{
                 'Accept'        => 'application/x-www-form-urlencoded',
             ];
             $data = [
-                'success_url'          => $_ENV['SUCCESS_URL'],
-                'cancel_url'           => $_ENV['CANCEL_URL'],
+                'success_url'          => $_ENV['SUCCESS_URL'] . '&' . $this->param,
+                'cancel_url'           => $_ENV['CANCEL_URL'] . '&' . '&plan=' . $_GET['plan'],
                 'payment_method_types' => ['card'],
                 'line_items' => [
                     [

@@ -154,56 +154,58 @@
             </div>
           </div>
         </div>
-        <!-- <form action="form.php" method="POST"> -->
-        <div class="row">
-          <div class="col-md-6">
-            <div class="plan-box">
-              <div class="plan-box-title">
-                <h2>$49.95</h2>
-                <p>(Choose Plan)</p>
+        <form action="form.php" method="GET">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="plan-box">
+                <div class="plan-box-title">
+                  <h2>$49.95</h2>
+                  <p>(Choose Plan)</p>
+                </div>
+                <div class="plan-body">
+                  <ul>
+                    <li>Help find a location matching your criteria</li>
+                    <li>Provide current transmission rates</li>
+                    <li>
+                      Provide current entry requirements / quarantine
+                      information
+                    </li>
+                  </ul>
+                </div>
+                <div class="plan-bottom">
+                  <button name="plan" value="basic" type="submit">
+                    CHOOSE NOW
+                  </button>
+                </div>
               </div>
-              <div class="plan-body">
-                <ul>
-                  <li>Help find a location matching your criteria</li>
-                  <li>Provide current transmission rates</li>
-                  <li>
-                    Provide current entry requirements / quarantine information
-                  </li>
-                </ul>
-              </div>
-              <div class="plan-bottom">
-                <button name="basic-plan" value="basic" type="submit">
-                  CHOOSE NOW
-                </button>
+            </div>
+            <div class="col-md-6">
+              <div class="plan-box">
+                <div class="plan-box-title">
+                  <h2>$99.95</h2>
+                  <p>(Choose Plan)</p>
+                </div>
+                <div class="plan-body">
+                  <ul>
+                    <li>Help find a location matching your criteria</li>
+                    <li>Provide current transmission rates</li>
+                    <li>
+                      Provide current entry requirements / quarantine
+                      information
+                    </li>
+                    <li>Local and provincial level laws</li>
+                    <li>What if any challenges you will face in the country</li>
+                  </ul>
+                </div>
+                <div class="plan-bottom">
+                  <button name="plan" value="plus" type="submit">
+                    CHOOSE NOW
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="plan-box">
-              <div class="plan-box-title">
-                <h2>$99.95</h2>
-                <p>(Choose Plan)</p>
-              </div>
-              <div class="plan-body">
-                <ul>
-                  <li>Help find a location matching your criteria</li>
-                  <li>Provide current transmission rates</li>
-                  <li>
-                    Provide current entry requirements / quarantine information
-                  </li>
-                  <li>Local and provincial level laws</li>
-                  <li>What if any challenges you will face in the country</li>
-                </ul>
-              </div>
-              <div class="plan-bottom">
-                <button name="plus-plan" value="plus" type="submit">
-                  CHOOSE NOW
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- </form> -->
+        </form>
       </div>
     </div>
 
@@ -237,7 +239,6 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/sweetalert2.all.min.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
-    <script src="assets/js/main.js?v=1.0"></script>
+    <script src="assets/js/main.js?v=1.1"></script>
   </body>
 </html>
