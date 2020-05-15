@@ -63,6 +63,7 @@
      * @return void
      */
     function getCheckoutSession($param) {
+      $.LoadingOverlay("show");
       var milliseconds = new Date().getTime();
       $.ajax({
         url: "stripe-session.php?" + $param + "&t=" + milliseconds,
@@ -71,6 +72,8 @@
           if (response.success == 1) {
             localStorage.setItem("sc_session_id", response.id);
             redirectToCheckout(response.id);
+          } else {
+            $.LoadingOverlay("hide");
           }
         },
       });
@@ -91,6 +94,7 @@
         })
         .then(function (result) {
           showMessage("Error!", "Please try again", "error");
+          $.LoadingOverlay("hide");
         });
     }
 

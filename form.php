@@ -160,6 +160,7 @@
         <script src="assets/js/popper.min.js"></script>
         <script src="https://js.stripe.com/v3/"></script>
         <script src="assets/js/sweetalert2.all.min.js"></script>
+        <script src="assets/js/loadingoverlay.min.js"></script>
         <script src="assets/js/main.js?v=1.1"></script>
     </body>
 </html>
